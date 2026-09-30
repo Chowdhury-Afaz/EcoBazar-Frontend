@@ -1,0 +1,158 @@
+
+
+/* Common */
+@media (min-width:320px) and (max-width:991px){
+    .heading h2{
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--gray-scale-gray-–-900);
+}
+.heading a{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--branding-success);
+}
+}
+/* Hero */
+@media (min-width:320px) and (max-width:991px){
+    #heroSection{
+    padding: 24px 0 0 0;
+}
+}
+/* Featured */
+@media (min-width:320px) and (max-width:991px) {
+    #featured .container{
+    padding: 10px 20px;
+    box-shadow: none !important;
+    background-color: transparent;
+}
+}
+
+/* Category */
+@media (min-width:320px) and (max-width:991px){
+    #category{
+    padding: 30px 0;
+}
+#category .categoryCard{
+    border: none;
+    border-radius: 5px;
+    padding: 0px;
+    border-radius: 50%;
+}
+#category .categoryCard h5{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray-scale-gray-–-900);
+    margin-top: 16px;
+}
+}
+
+/* Product */
+@media (min-width:320px) and (max-width:991px){
+    #product .productCard{
+        margin-top: 24px;
+    }
+    #product .heading{
+    margin-bottom: 10px;
+}
+}
+/* Seasonal Banner */
+@media (min-width:320px) and (max-width:991px){
+    #seasonalBanner{
+    padding: 30px 0;
+}
+}
+@media (min-width:320px) and (max-width:991px){
+    #discountBanner{
+        display: none;
+    }
+    .seasonalSlider{
+        padding-bottom: 30px;
+    }
+}
+
+/* Latest News */
+@media (min-width:320px) and (max-width:991px){
+    #news{
+        padding: 20px 0;
+}
+}
+
+/* Advertisement */
+@media (min-width:320px) and (max-width:991px){
+    #advertisement .container{
+    padding: 20px 20px;
+}
+}
+/* Insta Post */
+@media (min-width:320px) and (max-width:991px){
+    #instaPost{
+    padding: 30px 0;
+}
+#instaPost h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 767px) {
+    .shop-page-header {
+        min-height: 100px;
+    }
+
+    .shop-header-content h1 {
+        font-size: 28px;
+    }
+
+    .shop-breadcrumb {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+}
+
+
+@media (max-width: 991px) {
+
+    .shop-products-section {
+        padding: 45px 0;
+    }
+
+    .shop-filter-sidebar {
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media (max-width: 575px) {
+
+    .shop-products-section {
+        padding: 35px 0;
+    }
+
+    .filter-title {
+        font-size: 17px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 575px) {
+
+    .shop-pagination {
+        margin-top: 30px;
+    }
+
+    .shop-pagination .pagination {
+        gap: 5px;
+    }
+
+    .shop-pagination .page-link {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
+    }
+
+}

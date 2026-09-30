@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Bazar</title>
+    <!--Google Fonts-->
+    <link rel="shortcut icon" href="./Image/logo.svg" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <!--Responsive CSS-->
+    <link rel="stylesheet" href="./Assets/CSS/responsive.css">
+</head>
+<body>
+    <header>
+
+        <!--Top Header-->
+        <div class="topHead">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 d-flex align-items-center justify-content-lg-start justify-content-center">
+                        <iconify-icon icon="fluent:location-28-regular" width="16" height="16"></iconify-icon>
+                        <address>Store Location: Lincoln- 344, Illinois, Chicago, USA</address>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center">
+                        <form action="">
+                            <select>
+                                <option>ENG</option>
+                                <option>BNG</option>
+                                <option>FRN</option>
+                            </select>
+                        </form>
+                        <form action="">
+                            <select>
+                                <option>USD</option>
+                                <option>BDT</option>
+                                <option>EUR</option>
+                            </select>
+                        </form>
+                        <a href="#">Sign In / Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Middle Header-->
+        <div class="middleHead d-lg-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="#"><img class="img-fluid" src="./Image/Logo.png" alt="NavLogo"></a>
+                    </div>
+
+                    <div class="col-lg-6 d-lg-block d-none">
+                        <form action="">
+                            <div class="d-flex">
+                                <iconify-icon icon="icon-park-outline:search" width="20" height="20"></iconify-icon>
+                                <input type="search" placeholder="Search...">
+                                <button>Search</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-lg-3 d-none d-lg-flex align-items-center justify-content-end">
+                        <ul class="quickLinks align-items-center">
+                            <li>
+                                <a href="#"><iconify-icon icon="solar:heart-linear" width="32" height="32"></iconify-icon></a>
+                            </li>
+                            <li>
+                                <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                                    <a class="cart d-flex align-items-center" href="#">
+                                        <div class="icon">
+                                            <p>2</p>
+                                            <iconify-icon icon="ph:handbag" width="32" height="32"></iconify-icon>
+                                        </div>
+                                        <div class="cartCnt">
+                                            <p>Shopping cart:</p>
+                                            <strong>$57.00</strong>
+                                        </div>
+                                    </a>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Desktop Cart -->
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Shopping Cart</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body text-center">
+                            <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
+                            <p>No products in the cart</p>
+                            <a href="./index.html">Return to Shop</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Bottom Header-->
+        <div class="bottomHead d-lg-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <ul class="menu d-flex">
+                            <li><a href="./index.html">Home</a></li>
+                            <li>
+                                <a href="#" class="active">Shop</a>
+                                <ul class="subMenu">
+                                    <li><a href="#">Organic Food</a></li>
+                                    <li><a href="#">Organic Food</a></li>
+                                    <li><a href="#">Organic Food</a></li>
+                                    <li><a href="#">Organic Food</a></li>
+                                    <li><a href="#">Organic Food</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Pages</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="call col-lg-4 d-flex justify-content-end align-items-center">
+                        <a href="#"><iconify-icon icon="line-md:phone-call" width="28" height="28"></iconify-icon></a>
+                        <a href="tel:2195550114">(219) 555-0114</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Mobile Header-->
+        <div class="mblHead d-flex d-lg-none">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Menu -->
+                    <div class="col-3 mblMenu">
+                        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop">
+                            <iconify-icon icon="mi:menu" width="24" height="24"></iconify-icon>
+                        </button>
+
+                        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop">
+                            <div class="offcanvas-header">
+                                <h5><img class="img-fluid" src="./Image/Logo.png" alt=""></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+                                <div class="accordion" id="accordionExample">
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                                Home
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample"></div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                                Shop
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <ul>
+                                                    <li><a href="#">Organic Food</a></li>
+                                                    <li><a href="#">Organic Food</a></li>
+                                                    <li><a href="#">Organic Food</a></li>
+                                                    <li><a href="#">Organic Food</a></li>
+                                                    <li><a href="#">Organic Food</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- FIXED UNIQUE IDS -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                                Pages
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                                Blog
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                                                About Us
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                                                Contact Us
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="col-6">
+                        <a href="#"><img src="./Image/Logo.png" alt=""></a>
+                    </div>
+
+                    <!-- Cart -->
+                    <div class="col-3">
+                        <ul class="quickLinks align-items-center">
+                            <li>
+                                <!-- FIXED -->
+                                <button type="button" class="cart d-flex align-items-center"
+                                        data-bs-toggle="offcanvas"
+                                        data-bs-target="#offcanvasRightMobile">
+                                    <div class="icon">
+                                        <p>2</p>
+                                        <iconify-icon icon="ph:handbag" width="32" height="32"></iconify-icon>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- FIXED -->
+                    <div class="mblCart offcanvas offcanvas-end" tabindex="-1" id="offcanvasRightMobile">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title">Shopping Cart</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body text-center">
+                            <iconify-icon icon="carbon:shopping-cart-clear" width="80" height="80"></iconify-icon>
+                            <p>No products in the cart</p>
+                            <a href="./index.html">Return to Shop</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    
+    
+    <main>
+        <!--Header-->
+        <section class="shop-page-header">
+            <img
+            src="Image/Breadcrumbs.png"
+            alt=""
+            class="shop-header-bg"
+            />
+
+            <div class="shop-header-overlay"></div>
+
+            <div class="container">
+            <div class="shop-header-content">
+                <nav aria-label="breadcrumb">
+                    <ol class="shop-breadcrumb">
+                        <li class="breadcrumb-item">
+                        <a href="./index.html">
+                            <iconify-icon icon="mdi:home"></iconify-icon>
+                        </a>
+                        </li>
+                        <li class="breadcrumb-separator">
+                        <iconify-icon icon="mdi:chevron-right"></iconify-icon>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                        Shop
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+            </div>
+        </section>
+
+        <!--Shop Product-->
+        <section class="shop-products-section">
+            <div class="container">
+                <div class="row g-4">
+
+                    <!-- Filter Sidebar -->
+                    <div class="col-lg-3">
+                        <aside class="shop-filter-sidebar">
+
+                            <!-- Categories -->
+                            <div class="filter-group">
+                                <h4 class="filter-title">Categories</h4>
+
+                                <div class="filter-option">
+                                    <label for="category-all">
+                                        <input type="checkbox" id="category-all">
+                                        <span>All Categories</span>
+                                    </label>
+                                    <span class="filter-count">12</span>
+                                </div>
+
+                                <div class="filter-option">
+                                    <label for="category-vegetables">
+                                        <input type="checkbox" id="category-vegetables">
+                                        <span>Vegetables</span>
+                                    </label>
+                                    <span class="filter-count">8</span>
+                                </div>
+
+                                <div class="filter-option">
+                                    <label for="category-fruits">
+                                        <input type="checkbox" id="category-fruits">
+                                        <span>Fresh Fruits</span>
+                                    </label>
+                                    <span class="filter-count">6</span>
+                                </div>
+
+                                <div class="filter-option">
+                                    <label for="category-meat">
+                                        <input type="checkbox" id="category-meat">
+                                        <span>Meat & Fish</span>
+                                    </label>
+                                    <span class="filter-count">5</span>
+                                </div>
+
+                                <div class="filter-option">
+                                    <label for="category-snacks">
+                                        <input type="checkbox" id="category-snacks">
+                                        <span>Snacks</span>
+                                    </label>
+                                    <span class="filter-count">9</span>
+                                </div>
+
+                                <div class="filter-option">
+                                    <label for="category-beverages">
+                                        <input type="checkbox" id="category-beverages">
+                                        <span>Beverages</span>
+                                    </label>
+                                    <span class="filter-count">7</span>
+                                </div>
+                            </div>
+
+
+                            <!-- Price -->
+                            <div class="filter-group">
+                                <h4 class="filter-title">Price</h4>
+
+                                <div class="price-inputs">
+
+                                    <div class="price-input">
+                                        <span>$</span>
+                                        <input type="number" placeholder="Min">
+                                    </div>
+
+                                    <span class="price-dash">—</span>
+
+                                    <div class="price-input">
+                                        <span>$</span>
+                                        <input type="number" placeholder="Max">
+                                    </div>
+
+                                </div>
+
+                                <div class="price-range">
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        min="0"
+                                        max="1000"
+                                        value="500"
+                                    >
+                                </div>
+
+                                <div class="price-range-info">
+                                    <span>Price:</span>
+                                    <strong>$0 - $500</strong>
+                                </div>
+                            </div>
+
+
+                            <!-- Rating -->
+                            <div class="filter-group">
+                                <h4 class="filter-title">Rating</h4>
+
+                                <label class="rating-option" for="rating-5">
+                                    <input type="checkbox" id="rating-5">
+
+                                    <span class="rating-stars">
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                    </span>
+
+                                    <span class="rating-text">5.0</span>
+                                </label>
+
+                                <label class="rating-option" for="rating-4">
+                                    <input type="checkbox" id="rating-4">
+
+                                    <span class="rating-stars">
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star-outline"></iconify-icon>
+                                    </span>
+
+                                    <span class="rating-text">& Up</span>
+                                </label>
+
+                                <label class="rating-option" for="rating-3">
+                                    <input type="checkbox" id="rating-3">
+
+                                    <span class="rating-stars">
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star"></iconify-icon>
+                                        <iconify-icon icon="mdi:star-outline"></iconify-icon>
+                                        <iconify-icon icon="mdi:star-outline"></iconify-icon>
+                                    </span>
+
+                                    <span class="rating-text">& Up</span>
+                                </label>
+                            </div>
+
+                        </aside>
+                    </div>
+
+
+                    <!-- Product Listing -->
+                    <div class="col-lg-9">
+
+                        <div id="product">
+                            <div class="row g-3">
+
+                                <!-- Product 01 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 50%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P1.png"
+                                                    alt="Green Apple">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Apple</a>
+
+                                            <p>
+                                                $14.99
+                                                <del>$20.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Product 02 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 30%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P2.png"
+                                                    alt="Fresh Red Apple">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Fresh Red Apple</a>
+
+                                            <p>
+                                                $18.99
+                                                <del>$24.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Product 03 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 04 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 05 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 06 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 07 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="#">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="#">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                                <!-- Product 08 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product 08 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product 08 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product 08 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Product 08 -->
+                                <div class="col-md-4">
+                                    <div class="productCard">
+
+                                        <div class="productImg">
+
+                                            <div class="hoverIcon">
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:heart-linear"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+
+                                                <a href="#">
+                                                    <iconify-icon
+                                                        icon="solar:eye-outline"
+                                                        width="24"
+                                                        height="24">
+                                                    </iconify-icon>
+                                                </a>
+                                            </div>
+
+                                            <div class="discount">
+                                                <p>Sale 25%</p>
+                                            </div>
+
+                                            <a href="./productDetails.html">
+                                                <img
+                                                    class="img-fluid"
+                                                    src="./Image/P3.png"
+                                                    alt="Green Capsicum">
+                                            </a>
+
+                                        </div>
+
+                                        <div class="productCnt">
+
+                                            <a href="./productDetails.html">Green Capsicum</a>
+
+                                            <p>
+                                                $12.99
+                                                <del>$16.99</del>
+                                            </p>
+
+                                            <div class="rating">
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                                <iconify-icon
+                                                    class="mutedStar"
+                                                    icon="ic:round-star"
+                                                    width="16"
+                                                    height="16">
+                                                </iconify-icon>
+
+                                            </div>
+
+                                            <div class="addToCart">
+                                                <iconify-icon
+                                                    icon="ph:handbag"
+                                                    width="24"
+                                                    height="24">
+                                                </iconify-icon>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="shop-pagination">
+                            <nav aria-label="Shop pagination">
+                                <ul class="pagination">
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <iconify-icon icon="solar:alt-arrow-left-linear"></iconify-icon>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <iconify-icon icon="solar:alt-arrow-right-linear"></iconify-icon>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Newsletter-->
+        <section id="newsLetter">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3">
+                        <h3>Subcribe our Newsletter</h3>
+                        <p>Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.</p>
+                    </div>
+                    <div class="col-lg-6 mt-lg-0 mt-4">
+                        <form id="newsletterForm">
+                            <input type="email" placeholder="Your email address" required>
+                            <button>Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-3 text-lg-end text-left mt-lg-0 mt-4">
+                        <a href="#"><iconify-icon icon="ri:facebook-fill" width="24" height="24"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="mdi:twitter" width="24" height="24"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="entypo-social:pinterest" width="24" height="24"></iconify-icon></a>
+                        <a href="#"><iconify-icon icon="mdi:instagram" width="24" height="24"></iconify-icon></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footerLeft col-lg-4">
+                    <a href="#"><img class="img-fluid" src="./Image/FooterLogo.png" alt="FL"></a>
+                    <p>Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.</p>
+                    <a class="info" href="tel:2195550114">(219) 555-0114</a>
+                    <span>or</span>
+                    <a class="info" href="#">Proxy@gmail.com</a>
+                </div>
+                <div class="footerMiddle col-lg-2">
+                    <h6>My Account</h6>
+                    <div class="link">
+                        <a href="#">My Account</a>
+                        <a href="#">Order History</a>
+                        <a href="#">Shoping Cart</a>
+                        <a href="#">Wishlist</a>
+                    </div>
+                </div>
+                <div class="footerMiddle col-lg-2">
+                    <h6>Helps</h6>
+                    <div class="link">
+                        <a href="#">Contact</a>
+                        <a href="#">Faqs</a>
+                        <a href="#">Terms & Condition</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+                <div class="footerMiddle col-lg-2">
+                    <h6>Proxy</h6>
+                    <div class="link">
+                        <a href="#">About</a>
+                        <a href="#">Shop</a>
+                        <a href="#">Product</a>
+                        <a href="#">Track Order</a>
+                    </div>
+                </div>
+                <div class="footerMiddle col-lg-2">
+                    <h6>Categories</h6>
+                    <div class="link">
+                        <a href="#">Fruit & Vegetables</a>
+                        <a href="#">Meat & Fish</a>
+                        <a href="#">Bread & Bakery</a>
+                        <a href="#">Beauty & Health</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!--Jquery-->
+    <script src="./Assets/JS/jquery-3.7.1.min.js"></script>
+    <!--Iconify Icon-->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="./Assets/CSS/bootstrap.bundle.min.js"></script>
+    <!--Main JS-->
+    <script src="./Assets/JS/java.js"></script>
+</body>
+</html>
